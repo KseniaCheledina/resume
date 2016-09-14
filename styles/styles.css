@@ -15,13 +15,31 @@ body {
   font-family: PTSansRegular, sans-serif;
   font-size: 15px; }
 
+ul li {
+  list-style: none;
+  position: relative;
+  padding-left: 40px; }
+
+table {
+  font-size: 1.3em; }
+  table th, table td {
+    padding: 5%; }
+  table th {
+    text-transform: uppercase;
+    color: #3e6db0;
+    text-align: left; }
+
+progress {
+  width: 100%;
+  background-color: #e6e6e6;
+  border: 0;
+  height: 22px;
+  width: 285px; }
+
 #wrapper {
   min-height: 100%;
   overflow: hidden;
   position: relative; }
-
-li {
-  list-style: none; }
 
 .container {
   width: 1280px;
@@ -43,10 +61,10 @@ h3 {
   float: left; }
 
 .column-1 {
-  width: 35%; }
+  width: 40%; }
 
 .column-2 {
-  width: 65%; }
+  width: 60%; }
 
 .picture {
   max-width: 260px;
@@ -122,6 +140,15 @@ h3 {
 .icon, .title, .line {
   float: left; }
 
+.line {
+  margin: a;
+  width: 70px;
+  height: 5px;
+  background-color: #3e6db0; }
+
+section {
+  position: relative; }
+
 .section-title {
   margin-top: 50px;
   margin-bottom: 10px; }
@@ -136,3 +163,34 @@ h3 {
   height: 80px;
   font-size: 2.1em;
   padding: 20px 5px; }
+
+.degree {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #3e6db0; }
+
+.name-item {
+  font-size: 1.45em;
+  text-transform: uppercase; }
+
+.circle-list {
+  position: absolute;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  background: #000000;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
+.company {
+  font-size: 1.6em;
+  text-transform: uppercase; }
+
+.column-soft-1, column-soft-2 {
+  width: 50%; }
+
+.small {
+  text-transform: capitalize; }
