@@ -1,20 +1,28 @@
 @import fonts
 @import mixins
 
-$blue: rgb(62, 109, 176)
+$blue: #3D6cb0
+$grey: #e6e6e6
 
 *
 	padding: 0
 	margin: 0
-	box-sizing: border-box
+
 
 body
 	width: 100%
 	height: 100%
 	font-family: PTSansRegular, sans-serif
 	font-size: 15px
+	text-transform: uppercase
 
-ul 
+p
+	text-transform: none
+	line-height: 1.3
+
+
+
+.education-list, .job-list 
 	li
 		list-style: none
 		position: relative
@@ -25,17 +33,10 @@ table
 	th, td
 		padding: 5%
 	th
-		text-transform: uppercase
 		color: $blue
 		text-align: left
 
-
-progress
-	width: 100%
-	background-color: #e6e6e6
-	border: 0
-	height: 22px
-	width: 285px
+	
 
 #wrapper
 	min-height: 100%
@@ -51,7 +52,6 @@ progress
 	padding: 60px
 
 h3
-	text-transform: uppercase
 	color: $blue
 
 .column
@@ -63,6 +63,8 @@ h3
 .column-2
 	width: 60%
 
+
+// Picture
 .picture
 	max-width: 260px
 	max-height: 260px
@@ -85,11 +87,12 @@ h3
 	left: 15px
 	background-color: $blue
 	+border-radius(105px)
+
+// Name
 .name
 	width: 100%
 	.first-name, .last-name, .occupation
 		text-align: center
-		text-transform: uppercase
 		line-height: 1
 .first-name
 	font-size: 3.3em
@@ -100,11 +103,14 @@ h3
 	margin-bottom: 4%
 .occupation
 	font-size: 1.5em
+
+// Section icons
 .icon 
 	width: 85px
 	height: 80px
 	background-image: url(../images/sprite.png) 
 	background-repeat: no-repeat
+	padding-bottom: 2%
 .icon-profile
 	background-position: 0 0
 .icon-contact
@@ -120,33 +126,33 @@ h3
 
 .icon, .title, .line
 	float: left
+	
 .line
 	margin: a
 	width: 70px
 	height: 5px
 	background-color: $blue
+
 section
 	position: relative
 
 .section-title
 	+clearfix
 	margin-top: 50px
-	margin-bottom: 10px
+	
 .title
 	width: 40%
-	height: 80px
 	font-size: 2.1em
 	padding: 20px 5px
 
+// Degree section
 .degree
 	font-size: 1.5em
-	text-transform: uppercase
 	font-weight: bold
 	color: $blue
 
 .name-item
-	font-size: 1.45em
-	text-transform: uppercase	
+	font-size: 1.45em	
 
 .circle-list
 	position: absolute
@@ -156,16 +162,59 @@ section
 	background: #000000
 	+border-radius(10px)
 
+// Company section
 .company
 	font-size: 1.6em
-	text-transform: uppercase
 
-.column-soft-1, column-soft-2
-	width: 50%
-.small
+.capitalize
 	text-transform: capitalize
+.small
+	text-transform: lowercase
 
+// Skills section
+.skill
+	+clearfix
+	margin-bottom: 20px
+	font-size: 1.5em
+	text-align: center
+.dots-wrapper
+	position: relative
+.dots
+	list-style: none
+.dots li
+	background-color: $blue
+	width: 18px
+	height: 18px
+	+border-radius(50%)
+	display: inline-block
+	margin-right: 5px
+.dots .grey
+	background-color: $grey
 
+// Software section
+.column-soft-1, .column-soft-2
+	width: 50%
+	font-size: 1.5em
 
+progress
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	border: none
+	height: 22px
+	width: 285px
+	margin-top: 4%
+	margin-bottom: 6%
+// For IE 10
+	color: $blue
+
+progress::-webkit-progress-bar, progress::-moz-progress-bar 
+	width: 100%
+	background-color: $grey
+	border: 0
+	margin-top: 20px
+
+progress::-webkit-progress-value
+	background: $blue
 
 
