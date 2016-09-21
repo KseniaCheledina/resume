@@ -1,15 +1,21 @@
 @font-face {
-  font-family: "PT_Sans";
-  src: url("fonts/PT_Sans-Web-Regular.eot");
-  src: local(""), url("fonts/PT_Sans-Web-Regular.woff") format("woff"), url("fonts/PT_Sans-Web-Regular.ttf") format("truetype"), url("fonts/PT_Sans-Web-Regular.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+  font-family: PTSansRegular;
+  src: local("PT Sans"), url("fonts/PT_Sans-Web-Regular/PT_Sans-Web-Regular.woff") format("woff"), url("fonts/PT_Sans-Web-Regular/PT_Sans-Web-Regular.ttf") format("truetype"), url("fonts/PT_Sans-Web-Regular/PT_Sans-Web-Regular.svg") format("svg");
+  font-weight: normal; }
+@font-face {
+  font-family: PTSansRegular;
+  src: local(PTSansRegular), url("fonts/PT_Sans-Web-Bold/PT_Sans-Web-Bold.woff") format("woff"), url("fonts/PT_Sans-Web-Bold/PT_Sans-Web-Bold.ttf") format("truetype"), url("fonts/PT_Sans-Web-Bold/PT_Sans-Web-Bold.svg") format("svg");
+  font-weight: bold; }
 * {
   padding: 0;
   margin: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
   box-sizing: border-box; }
 
 body {
+  line-height: 1;
   width: 100%;
   height: 100%;
   font-family: PTSansRegular, sans-serif;
@@ -18,10 +24,19 @@ body {
 
 p {
   text-transform: none;
-  line-height: 1.3; }
+  line-height: 1.3em; }
 
-section {
-  margin-bottom: 10%; }
+h3 {
+  color: #3D6cb0; }
+
+ul li {
+  list-style: none; }
+
+.small {
+  text-transform: lowercase; }
+
+.capitalize {
+  text-transform: capitalize; }
 
 #wrapper {
   min-height: 100%;
@@ -32,163 +47,250 @@ section {
   max-width: 1280px;
   margin: 0 auto;
   position: relative;
-  background-color: grey;
-  padding: 6.3% 4.35%; }
+  padding: 5.17% 4.4%; }
   .container:after, .container:before {
     display: table;
     content: ""; }
   .container:after {
     clear: both; }
 
-h3 {
-  color: #3D6cb0; }
-
 .column {
   float: left; }
 
 .column-1 {
-  width: 45%;
-  padding-right: 6.5%; }
+  width: 40%; }
+  .column-1 section {
+    padding-right: 3%; }
 
 .column-2 {
-  width: 55%;
-  margin-top: -1.49%;
-  margin-left: -1.2%; }
+  width: 60%;
+  padding-left: 3.8%; }
 
 .picture {
-  max-width: 260px;
-  max-height: 260px;
-  margin: 0 auto;
-  margin-bottom: 7.8%; }
+  width: 100%;
+  height: 100%;
+  margin: 3.5% auto 8%; }
 
 .circle-1 {
   position: relative;
-  margin: 0 auto;
   width: 240px;
   height: 240px;
-  border: 1px solid #3D6cb0;
   -webkit-border-radius: 120px;
   -moz-border-radius: 120px;
   -ms-border-radius: 120px;
-  border-radius: 120px; }
+  border-radius: 120px;
+  border: 1px solid #3D6cb0;
+  margin-left: 22.1%; }
 
 .circle-2 {
   position: absolute;
-  width: 210px;
-  height: 210px;
-  top: 6%;
-  left: 6%;
+  width: 209px;
+  height: 209px;
+  -webkit-border-radius: 104.5px;
+  -moz-border-radius: 104.5px;
+  -ms-border-radius: 104.5px;
+  border-radius: 104.5px;
+  border: none;
   background-color: #3D6cb0;
-  -webkit-border-radius: 105px;
-  -moz-border-radius: 105px;
-  -ms-border-radius: 105px;
-  border-radius: 105px; }
+  top: 14px;
+  left: 14px; }
 
 .name {
-  margin-bottom: 17.5%;
-  width: 100%; }
-  .name .first-name, .name .last-name, .name .occupation {
-    text-align: center;
-    line-height: 1.01; }
+  margin-bottom: 17.3%; }
+
+.first-name, .last-name, .occupation {
+  text-align: center; }
 
 .first-name {
-  font-size: 3.3em;
-  margin-left: 2%; }
+  font-size: 3.6em;
+  line-height: 0.9em; }
 
 .last-name {
   font-size: 3.8em;
   font-weight: bold;
-  margin-bottom: 3.6%; }
+  margin-bottom: 3%; }
 
 .occupation {
-  font-size: 1.5em;
-  margin-left: 2%; }
+  font-size: 1.7em; }
 
 .section-title {
   margin-bottom: 2.3%;
-  display: table;
-  margin-left: -0.9%; }
+  position: relative; }
+  .section-title:after, .section-title:before {
+    display: table;
+    content: ""; }
+  .section-title:after {
+    clear: both; }
 
 .icon {
-  width: 85px;
-  height: 80px;
   background-image: url(../images/sprite.png);
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  height: 74px; }
 
 .icon-profile {
-  background-position: 0 0; }
+  width: 76px;
+  background-position: 1% 34%; }
 
 .icon-contact {
-  background-position: 20% 0; }
+  width: 74px;
+  background-position: 20.4% 34%; }
 
 .icon-skills {
-  background-position: 39% 0; }
+  width: 74px;
+  background-position: 39.6% 34%; }
 
 .icon-education {
-  background-position: 59% 0; }
+  width: 76px;
+  background-position: 59% 34%; }
 
 .icon-experience {
-  background-position: 80% 0; }
+  width: 79px;
+  height: 76px;
+  background-position: 79.2% 40%; }
 
 .icon-software {
-  background-position: 100% 0; }
+  width: 76px;
+  background-position: 99% 34%; }
 
-.icon, .title, .line-wrapper {
-  display: table-cell;
-  vertical-align: middle; }
-
-.line {
-  width: 102%;
-  height: 5px;
-  margin-left: 1%;
-  background-color: #3D6cb0; }
+.icon, .title {
+  float: left; }
 
 .title {
-  width: 40%;
-  font-size: 2.13em;
-  padding: 1%; }
+  font-size: 2.5em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.line-wrapper {
+  float: left;
+  height: 100%;
+  width: 100%; }
+
+.line {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 5px;
+  background: #3D6cb0; }
+
+.profile .title {
+  margin-left: 19%; }
+.profile .line-wrapper {
+  margin-left: 56.5%; }
+.profile .line {
+  width: 38.6%; }
+
+.contact .title {
+  margin-left: 19%; }
+.contact .line-wrapper {
+  margin-left: 61%; }
+.contact .line {
+  width: 34.4%; }
+
+.skills .title {
+  margin-left: 18%; }
+.skills .line-wrapper {
+  margin-left: 50.1%; }
+.skills .line {
+  width: 44.5%; }
+
+.education .title {
+  margin-left: 15%; }
+.education .line-wrapper {
+  margin-left: 51%; }
+.education .line {
+  width: 49.5%; }
+
+.experience .title {
+  margin-left: 14%; }
+.experience .line-wrapper {
+  margin-left: 51%; }
+.experience .line {
+  width: 49.5%; }
+
+.software .title {
+  margin-left: 15%; }
+.software .line-wrapper {
+  margin-left: 48%; }
+.software .line {
+  width: 46.5%; }
+
+.profile {
+  margin-bottom: 9.8%; }
 
 .profile-text {
-  padding-right: 3.5%; }
+  padding-right: 7%; }
 
 .contact {
   margin-bottom: 7%; }
-
-.line-contact {
-  margin-left: 2%;
-  width: 88%; }
+  .contact .section-title {
+    margin-bottom: 3.5%; }
 
 table {
   border-collapse: collapse;
   font-size: 1.3em;
-  margin-left: -1.8%;
-  margin-top: 3.5%;
-  width: 100%; }
+  width: 87%; }
   table th {
     color: #3D6cb0;
-    text-align: left;
-    width: 30%; }
+    text-align: left; }
+  table th, table td {
+    padding: 5% 0; }
 
-.education .title {
-  padding: 2.7%; }
+.skills .section-title {
+  margin-bottom: 6%; }
 
-.education-list li, .job-list li {
-  list-style: none;
+.skill {
+  text-align: center;
+  font-size: 1.7em;
+  width: 95%; }
+
+.dots li {
+  background-color: #3D6cb0;
+  width: 18px;
+  height: 18px;
+  margin-right: 2.7%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  float: left; }
+.dots li:nth-child(5), .dots li:nth-child(10) {
+  margin-right: 3.6%; }
+
+.dots {
+  margin: 2.6% 0 5.7% 10.7%; }
+  .dots:after, .dots:before {
+    display: table;
+    content: ""; }
+  .dots:after {
+    clear: both; }
+  .dots .grey {
+    background-color: #e6e6e6; }
+
+.education {
+  margin-top: 0.6%;
+  margin-bottom: 8.3%; }
+  .education .section-title {
+    margin-bottom: 5%; }
+  .education li {
+    margin-bottom: 3%; }
+
+.education-list, .job-list {
   position: relative;
-  padding: 2.7% 9%; }
+  padding-left: 8.5%; }
 
-.degree {
-  font-size: 1.5em;
-  color: #3D6cb0; }
+.degree, .company {
+  font-size: 1.6em;
+  color: #3D6cb0;
+  margin-bottom: 1.4%; }
 
 .name-item {
-  font-size: 1.45em;
-  margin-top: 1%;
-  margin-bottom: 1.6%; }
+  font-size: 1.67em;
+  margin-bottom: 1.3%; }
 
 .circle-list {
   position: absolute;
-  left: 0;
+  left: 2%;
   width: 20px;
   height: 20px;
   background: #000000;
@@ -197,78 +299,150 @@ table {
   -ms-border-radius: 10px;
   border-radius: 10px; }
 
-.company {
-  font-size: 1.6em; }
+.experience {
+  margin-bottom: 8.6%; }
+  .experience .section-title {
+    margin-bottom: 7.4%; }
+  .experience li {
+    margin-bottom: 3%; }
 
-.capitalize {
-  text-transform: capitalize;
-  color: #000000; }
+.software {
+  margin-right: -6.5%; }
+  .software .section-title {
+    margin-bottom: 4.7%; }
 
-.small {
-  text-transform: lowercase; }
+.soft-container:after, .soft-container:before {
+  display: table;
+  content: ""; }
+.soft-container:after {
+  clear: both; }
+.soft-container div:first-child .rect, .soft-container div:nth-child(2) .rect {
+  margin-top: 4.5%; }
+.soft-container div:nth-child(2) .rect, .soft-container div:nth-child(4) .rect {
+  margin-top: 4.6%; }
+.soft-container div:nth-child(3) .rect, .soft-container div:nth-child(6) .rect {
+  margin-top: 3.6%; }
 
-.job-text {
-  margin-bottom: 1%; }
+.col-soft-1, .col-soft-2 {
+  font-size: 1.7em;
+  float: left;
+  width: 50%; }
+  .col-soft-1 .soft:first-child, .col-soft-2 .soft:first-child {
+    margin-bottom: 8.3%; }
+  .col-soft-1 .soft:nth-child(2), .col-soft-2 .soft:nth-child(2) {
+    margin-bottom: 8%; }
 
-.skills .section-title {
-  margin-left: -1.6%;
-  margin-bottom: 5.5%; }
+.col-soft-1 {
+  padding-left: 1.1%;
+  padding-right: 1.9%; }
 
-.line-skills {
-  width: 162%;
-  margin-left: 7%; }
+.col-soft-2 {
+  padding-left: 3%; }
 
-.skill {
-  margin-bottom: 5%;
-  font-size: 1.5em;
-  text-align: center; }
-  .skill:after, .skill:before {
-    display: table;
-    content: ""; }
-  .skill:after {
-    clear: both; }
+.rect {
+  position: relative;
+  background: #e6e6e6;
+  height: 23px;
+  width: 88%; }
 
-.dots-wrapper {
-  position: relative; }
+.rect-2 {
+  position: absolute;
+  background: #3D6cb0;
+  height: 23px; }
 
-.dots {
-  list-style: none; }
+.rect-photoshop {
+  width: 91%; }
 
-.dots li {
-  background-color: #3D6cb0;
-  width: 18px;
-  height: 18px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 2.5%; }
-  .dots li:last-child {
-    margin-right: 0; }
+.rect-illustrator {
+  width: 71%; }
 
-.dots .grey {
-  background-color: #e6e6e6; }
+.rect-indesign {
+  width: 57%; }
 
-.column-soft-1, .column-soft-2 {
-  width: 50%;
-  font-size: 1.5em; }
+.rect-dreamweaver {
+  width: 83%; }
 
-progress {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-  height: 22px;
-  width: 285px;
-  margin-top: 4%;
-  margin-bottom: 6%; }
+.rect-after {
+  width: 62%; }
 
-progress::-webkit-progress-bar {
-  width: 100%;
-  background-color: #e6e6e6;
-  border: 0;
-  margin-top: 20px; }
+.rect-html {
+  width: 91%; }
 
-progress::-webkit-progress-value {
-  background: #3D6cb0; }
+@media screen and (max-width: 729px) {
+  .column-1, .column-2 {
+    width: 100%; }
+
+  .container {
+    padding-top: 2%; }
+
+  .circle-1 {
+    margin: 0 auto; }
+
+  .picture {
+    margin: 1% auto 5%; }
+
+  .name {
+    margin-bottom: 3%; }
+
+  .section-title .title {
+    margin-left: 15%; }
+  .section-title .line-wrapper {
+    display: none; } }
+@media screen and (min-width: 730px) and (max-width: 1099px) {
+  .column-1, .column-2 {
+    width: 100%; }
+
+  .container {
+    padding-top: 2%; }
+
+  .circle-1 {
+    margin: 0 auto; }
+
+  .picture {
+    margin: 1% auto 5%; }
+
+  .name {
+    margin-bottom: 3%; }
+
+  .section-title .title {
+    margin-left: 15%; }
+  .section-title .line-wrapper {
+    margin-left: 50%;
+    width: 50%; } }
+@media screen and (min-width: 1100px) and (max-width: 1210px) {
+  .profile .line-wrapper {
+    margin-left: 61.5%; }
+  .profile .line {
+    width: 33.6%; }
+
+  .contact .line-wrapper {
+    margin-left: 67%; }
+  .contact .line {
+    width: 28.4%; }
+
+  .skills .title {
+    margin-left: 19%; }
+  .skills .line-wrapper {
+    margin-left: 54.1%; }
+  .skills .line {
+    width: 40.5%; }
+
+  .education .line-wrapper {
+    margin-left: 55%; }
+  .education .line {
+    width: 43.5%; }
+
+  .experience .line-wrapper {
+    margin-left: 59%; }
+  .experience .line {
+    width: 43.5%; }
+
+  .software .line-wrapper {
+    margin-left: 51%; }
+  .software .line {
+    width: 43.5%; } }
+@media screen and (min-width: 1211px) and (max-width: 1270px) {
+  .experience .line-wrapper {
+    margin-left: 54%; }
+  .experience .line {
+    width: 45.5%; } }
