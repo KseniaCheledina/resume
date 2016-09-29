@@ -56,7 +56,7 @@ ul
 .column-1
 	width: 40%
 	section
-		padding-right: 3%
+		padding-right: 3.5%
 
 .column-2
 	width: 60%
@@ -106,15 +106,31 @@ ul
 	font-size: 1.7em
 	
 // Section-title
+// general stuff
 .section-title
-	margin-bottom: 2.3%
-	position: relative
-	+clearfix
+	+flexbox()
+	+justify-content(space-between)
+	+align-items(center)
+.icon, .title
+	background-color: #ffffff
 .icon
 	background-image: url(../images/sprite.png) 
 	background-repeat: no-repeat
 	height: 74px
+	margin-right: 2%
+.line-wrapper
+	+flexbox()
+	+align-items(center)
+	+flex(1 1)
+.title
+	font-size: 2.5em
+	margin-right: 1%
+.line
+	width: 100%
+	height: 5px
+	background-color: $blue
 
+//specific stuff
 .icon-profile
 	width: 76px
 	background-position: 1% 34%
@@ -139,79 +155,20 @@ ul
 .icon-software
 	width: 76px
 	background-position:  99% 34%
-
-.icon, .title
-	float: left
-	
-.title
-	font-size: 2.5em
-	position: absolute
-	top: 50%
-	transform: translateY(-50%)
-.line-wrapper	
-	float: left
-	height: 100%
-	width: 100%
-
-.line
-	position: absolute
-	top: 50%
-	transform: translateY(-50%)
-	height: 5px
-	background: $blue
-
-
-.profile
-	.title
-		margin-left: 19%
+.column-1
 	.line-wrapper
-		margin-left: 56.5%
-	.line
-		width: 38.6%
-
-.contact
-	.title
-		margin-left: 19%
+		padding-right: 4.5%
+.column-2
+	.icon
+		margin-right: 3%
 	.line-wrapper
-		margin-left: 61%
-	.line
-		width: 34.4%
-
-.skills
-	.title
-		margin-left: 18%
-	.line-wrapper
-		margin-left: 50.1%
-	.line
-		width: 44.5%
-
-.education
-	.title
-		margin-left: 15%
-	.line-wrapper
-		margin-left: 51%
-	.line
-		width: 49.5%
-
-.experience
-	.title
-		margin-left: 14%
-	.line-wrapper
-		margin-left: 51%
-	.line
-		width: 49.5%
-
-.software
-	.title
-		margin-left: 15%
-	.line-wrapper
-		margin-left: 48%
-	.line
-		width: 46.5%
+		padding-right: 4.5%
 
 // Profile section
 .profile
-	margin-bottom: 9.8%
+	margin-bottom: 9.1%
+	.section-title
+		margin-bottom: 3%
 .profile-text
 	padding-right: 7%
 
@@ -352,93 +309,15 @@ table
 	width: 91%
 
 // Media queries
-@media screen and (max-width: 729px)
-	.column-1, .column-2
+@media screen and (max-width: 1110px)
+	.column 
 		width: 100%
-	.container
-		padding-top: 2%
-
 	.circle-1
 		margin: 0 auto
 	.picture
-		margin: 1% auto 5%
-
-	.name
-		margin-bottom: 3%
-
-	.section-title
-		.title
-			margin-left: 15%
-		.line-wrapper
-			display: none
-
-@media screen and (min-width: 730px) and (max-width: 1099px)
-
-	.column-1, .column-2
-		width: 100%
-	.container
-		padding-top: 2%
-
-	.circle-1
-		margin: 0 auto
-	.picture
-		margin: 1% auto 5%
-
-	.name
-		margin-bottom: 3%
-
-	.section-title
-		.title
-			margin-left: 15%
-		.line-wrapper
-			margin-left: 50%
-			width: 50%
-			
-
-@media screen and (min-width: 1100px) and (max-width: 1210px)
-	.profile
-		.line-wrapper
-			margin-left: 61.5%
-		.line
-			width: 33.6%
-
+		margin-bottom: 4%
+	.name, .profile, .contact, .skills
+		margin-bottom: 5%
 	.contact
-		.line-wrapper
-			margin-left: 67%
-		.line
-			width: 28.4%
-
-	.skills
-		.title
-			margin-left: 19%
-		.line-wrapper
-			margin-left: 54.1%
-		.line
-			width: 40.5%
-
-	.education
-		.line-wrapper
-			margin-left: 55%
-		.line
-			width: 43.5%
-
-	.experience
-		.line-wrapper
-			margin-left: 59%
-		.line
-			width: 43.5%
-
-	.software
-		.line-wrapper
-			margin-left: 51%
-		.line
-			width: 43.5%
-
-@media screen and (min-width: 1211px) and (max-width: 1270px)
-	.experience
-		.line-wrapper
-			margin-left: 54%
-		.line
-			width: 45.5%
-
-
+		table
+			width: 60%

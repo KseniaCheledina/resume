@@ -60,7 +60,7 @@ ul li {
 .column-1 {
   width: 40%; }
   .column-1 section {
-    padding-right: 3%; }
+    padding-right: 3.5%; }
 
 .column-2 {
   width: 60%;
@@ -114,18 +114,57 @@ ul li {
   font-size: 1.7em; }
 
 .section-title {
-  margin-bottom: 2.3%;
-  position: relative; }
-  .section-title:after, .section-title:before {
-    display: table;
-    content: ""; }
-  .section-title:after {
-    clear: both; }
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center; }
+
+.icon, .title {
+  background-color: #ffffff; }
 
 .icon {
   background-image: url(../images/sprite.png);
   background-repeat: no-repeat;
-  height: 74px; }
+  height: 74px;
+  margin-right: 2%; }
+
+.line-wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1 1;
+  -ms-flex: 1 1;
+  flex: 1 1; }
+
+.title {
+  font-size: 2.5em;
+  margin-right: 1%; }
+
+.line {
+  width: 100%;
+  height: 5px;
+  background-color: #3D6cb0; }
 
 .icon-profile {
   width: 76px;
@@ -152,71 +191,18 @@ ul li {
   width: 76px;
   background-position: 99% 34%; }
 
-.icon, .title {
-  float: left; }
+.column-1 .line-wrapper {
+  padding-right: 4.5%; }
 
-.title {
-  font-size: 2.5em;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%); }
-
-.line-wrapper {
-  float: left;
-  height: 100%;
-  width: 100%; }
-
-.line {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 5px;
-  background: #3D6cb0; }
-
-.profile .title {
-  margin-left: 19%; }
-.profile .line-wrapper {
-  margin-left: 56.5%; }
-.profile .line {
-  width: 38.6%; }
-
-.contact .title {
-  margin-left: 19%; }
-.contact .line-wrapper {
-  margin-left: 61%; }
-.contact .line {
-  width: 34.4%; }
-
-.skills .title {
-  margin-left: 18%; }
-.skills .line-wrapper {
-  margin-left: 50.1%; }
-.skills .line {
-  width: 44.5%; }
-
-.education .title {
-  margin-left: 15%; }
-.education .line-wrapper {
-  margin-left: 51%; }
-.education .line {
-  width: 49.5%; }
-
-.experience .title {
-  margin-left: 14%; }
-.experience .line-wrapper {
-  margin-left: 51%; }
-.experience .line {
-  width: 49.5%; }
-
-.software .title {
-  margin-left: 15%; }
-.software .line-wrapper {
-  margin-left: 48%; }
-.software .line {
-  width: 46.5%; }
+.column-2 .icon {
+  margin-right: 3%; }
+.column-2 .line-wrapper {
+  padding-right: 4.5%; }
 
 .profile {
-  margin-bottom: 9.8%; }
+  margin-bottom: 9.1%; }
+  .profile .section-title {
+    margin-bottom: 3%; }
 
 .profile-text {
   padding-right: 7%; }
@@ -368,81 +354,20 @@ table {
 .rect-html {
   width: 91%; }
 
-@media screen and (max-width: 729px) {
-  .column-1, .column-2 {
+@media screen and (max-width: 1110px) {
+  .column {
     width: 100%; }
-
-  .container {
-    padding-top: 2%; }
 
   .circle-1 {
     margin: 0 auto; }
 
   .picture {
-    margin: 1% auto 5%; }
+    margin-bottom: 4%; }
 
-  .name {
-    margin-bottom: 3%; }
+  .name, .profile, .contact, .skills {
+    margin-bottom: 5%; }
 
-  .section-title .title {
-    margin-left: 15%; }
-  .section-title .line-wrapper {
-    display: none; } }
-@media screen and (min-width: 730px) and (max-width: 1099px) {
-  .column-1, .column-2 {
-    width: 100%; }
+  .contact table {
+    width: 60%; } }
 
-  .container {
-    padding-top: 2%; }
-
-  .circle-1 {
-    margin: 0 auto; }
-
-  .picture {
-    margin: 1% auto 5%; }
-
-  .name {
-    margin-bottom: 3%; }
-
-  .section-title .title {
-    margin-left: 15%; }
-  .section-title .line-wrapper {
-    margin-left: 50%;
-    width: 50%; } }
-@media screen and (min-width: 1100px) and (max-width: 1210px) {
-  .profile .line-wrapper {
-    margin-left: 61.5%; }
-  .profile .line {
-    width: 33.6%; }
-
-  .contact .line-wrapper {
-    margin-left: 67%; }
-  .contact .line {
-    width: 28.4%; }
-
-  .skills .title {
-    margin-left: 19%; }
-  .skills .line-wrapper {
-    margin-left: 54.1%; }
-  .skills .line {
-    width: 40.5%; }
-
-  .education .line-wrapper {
-    margin-left: 55%; }
-  .education .line {
-    width: 43.5%; }
-
-  .experience .line-wrapper {
-    margin-left: 59%; }
-  .experience .line {
-    width: 43.5%; }
-
-  .software .line-wrapper {
-    margin-left: 51%; }
-  .software .line {
-    width: 43.5%; } }
-@media screen and (min-width: 1211px) and (max-width: 1270px) {
-  .experience .line-wrapper {
-    margin-left: 54%; }
-  .experience .line {
-    width: 45.5%; } }
+/*# sourceMappingURL=styles.css.map */
