@@ -19,12 +19,12 @@ body {
   width: 100%;
   height: 100%;
   font-family: PTSansRegular, sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   text-transform: uppercase; }
 
 p {
   text-transform: none;
-  line-height: 1.3em; }
+  line-height: 1.19em; }
 
 h3 {
   color: #3D6cb0; }
@@ -47,7 +47,7 @@ ul li {
   max-width: 1280px;
   margin: 0 auto;
   position: relative;
-  padding: 5.17% 4.4%; }
+  padding: 5.17% 4.2% 5.17% 4.4%; }
   .container:after, .container:before {
     display: table;
     content: ""; }
@@ -64,12 +64,12 @@ ul li {
 
 .column-2 {
   width: 60%;
-  padding-left: 3.8%; }
+  padding-left: 3.65%; }
 
 .picture {
   width: 100%;
   height: 100%;
-  margin: 3.5% auto 8%; }
+  margin: 3.5% auto 8.1%; }
 
 .circle-1 {
   position: relative;
@@ -102,16 +102,16 @@ ul li {
   text-align: center; }
 
 .first-name {
-  font-size: 3.6em;
-  line-height: 0.9em; }
+  font-size: 3.4em;
+  line-height: 0.85em; }
 
 .last-name {
   font-size: 3.8em;
   font-weight: bold;
-  margin-bottom: 3%; }
+  margin-bottom: 2.7%; }
 
 .occupation {
-  font-size: 1.7em; }
+  font-size: 1.6em; }
 
 .section-title {
   display: -webkit-box;
@@ -158,8 +158,7 @@ ul li {
   flex: 1 1; }
 
 .title {
-  font-size: 2.5em;
-  margin-right: 1%; }
+  font-size: 2.4em; }
 
 .line {
   width: 100%;
@@ -168,19 +167,20 @@ ul li {
 
 .icon-profile {
   width: 76px;
-  background-position: 1% 34%; }
+  background-position: 1% 38%; }
 
 .icon-contact {
   width: 74px;
-  background-position: 20.4% 34%; }
+  background-position: 20.5% 38%;
+  margin-right: 3%; }
 
 .icon-skills {
   width: 74px;
-  background-position: 39.6% 34%; }
+  background-position: 39.6% 38%; }
 
 .icon-education {
   width: 76px;
-  background-position: 59% 34%; }
+  background-position: 59.1% 36%; }
 
 .icon-experience {
   width: 79px;
@@ -192,81 +192,92 @@ ul li {
   background-position: 99% 34%; }
 
 .column-1 .line-wrapper {
-  padding-right: 4.5%; }
+  padding-right: 4.6%; }
 
 .column-2 .icon {
   margin-right: 3%; }
-.column-2 .line-wrapper {
-  padding-right: 4.5%; }
+.column-2 .title {
+  margin-right: 1.5%; }
 
 .profile {
-  margin-bottom: 9.1%; }
+  margin-bottom: 6.3%; }
   .profile .section-title {
-    margin-bottom: 3%; }
+    margin-bottom: 2.9%; }
 
 .profile-text {
   padding-right: 7%; }
 
 .contact {
-  margin-bottom: 7%; }
+  margin-bottom: 7.5%; }
   .contact .section-title {
-    margin-bottom: 3.5%; }
+    margin-bottom: 4.4%; }
 
 table {
   border-collapse: collapse;
-  font-size: 1.3em;
+  font-size: 1.31em;
   width: 87%; }
   table th {
     color: #3D6cb0;
     text-align: left; }
   table th, table td {
-    padding: 5% 0; }
+    padding: 4.4% 0; }
+  table tr:nth-child(2) th, table tr:nth-child(2) td {
+    padding-bottom: 5%; }
 
 .skills .section-title {
-  margin-bottom: 6%; }
+  margin-bottom: 6.2%; }
+.skills .title {
+  margin-right: 1.1%; }
 
 .skill {
   text-align: center;
-  font-size: 1.7em;
+  font-size: 1.65em;
   width: 95%; }
+
+.dots-wrapper {
+  margin: 2.3% 0 5.9% 10.7%; }
 
 .dots li {
   background-color: #3D6cb0;
   width: 18px;
   height: 18px;
-  margin-right: 2.7%;
+  margin-right: 10px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
   float: left; }
 .dots li:nth-child(5), .dots li:nth-child(10) {
-  margin-right: 3.6%; }
+  margin-right: 13px; }
 
-.dots {
-  margin: 2.6% 0 5.7% 10.7%; }
-  .dots:after, .dots:before {
-    display: table;
-    content: ""; }
-  .dots:after {
-    clear: both; }
-  .dots .grey {
-    background-color: #e6e6e6; }
+.dots:after, .dots:before {
+  display: table;
+  content: ""; }
+.dots:after {
+  clear: both; }
+.dots .grey {
+  background-color: #e6e6e6; }
+
+.skill:last-child .dots-wrapper {
+  margin-top: 2.1%; }
 
 .education {
   margin-top: 0.6%;
-  margin-bottom: 8.3%; }
+  margin-bottom: 8.2%; }
   .education .section-title {
-    margin-bottom: 5%; }
-  .education li {
-    margin-bottom: 3%; }
+    margin-bottom: 4.8%; }
+
+.education-list li:first-child {
+  margin-bottom: 3.1%; }
+.education-list li {
+  margin-bottom: 2.7%; }
 
 .education-list, .job-list {
   position: relative;
   padding-left: 8.5%; }
 
 .degree, .company {
-  font-size: 1.6em;
+  font-size: 1.5em;
   color: #3D6cb0;
   margin-bottom: 1.4%; }
 
@@ -286,16 +297,22 @@ table {
   border-radius: 10px; }
 
 .experience {
-  margin-bottom: 8.6%; }
+  margin-bottom: 8.3%; }
   .experience .section-title {
     margin-bottom: 7.4%; }
+    .experience .section-title .icon-experience {
+      margin-right: 2.5%; }
   .experience li {
-    margin-bottom: 3%; }
+    margin-bottom: 2.85%; }
 
 .software {
-  margin-right: -6.5%; }
+  margin-right: -6.1%; }
   .software .section-title {
-    margin-bottom: 4.7%; }
+    margin-bottom: 4.4%; }
+    .software .section-title .title {
+      margin-right: 2.4%; }
+    .software .section-title .line-wrapper {
+      padding-right: 5.7%; }
 
 .soft-container:after, .soft-container:before {
   display: table;
@@ -303,20 +320,20 @@ table {
 .soft-container:after {
   clear: both; }
 .soft-container div:first-child .rect, .soft-container div:nth-child(2) .rect {
-  margin-top: 4.5%; }
+  margin-top: 4.9%; }
 .soft-container div:nth-child(2) .rect, .soft-container div:nth-child(4) .rect {
   margin-top: 4.6%; }
 .soft-container div:nth-child(3) .rect, .soft-container div:nth-child(6) .rect {
-  margin-top: 3.6%; }
+  margin-top: 3.5%; }
 
 .col-soft-1, .col-soft-2 {
-  font-size: 1.7em;
+  font-size: 1.6em;
   float: left;
   width: 50%; }
   .col-soft-1 .soft:first-child, .col-soft-2 .soft:first-child {
-    margin-bottom: 8.3%; }
+    margin-bottom: 8.4%; }
   .col-soft-1 .soft:nth-child(2), .col-soft-2 .soft:nth-child(2) {
-    margin-bottom: 8%; }
+    margin-bottom: 8.3%; }
 
 .col-soft-1 {
   padding-left: 1.1%;
@@ -340,19 +357,19 @@ table {
   width: 91%; }
 
 .rect-illustrator {
-  width: 71%; }
+  width: 70.5%; }
 
 .rect-indesign {
-  width: 57%; }
+  width: 56.5%; }
 
 .rect-dreamweaver {
-  width: 83%; }
+  width: 82%; }
 
 .rect-after {
-  width: 62%; }
+  width: 61%; }
 
 .rect-html {
-  width: 91%; }
+  width: 90%; }
 
 @media screen and (max-width: 1110px) {
   .column {
@@ -369,5 +386,37 @@ table {
 
   .contact table {
     width: 60%; } }
+@media screen and (max-width: 767px) {
+  .column {
+    width: 100%; }
+
+  .circle-1 {
+    margin: 0 auto; }
+
+  .picture {
+    margin-bottom: 4%; }
+
+  .name, .profile, .contact, .skills {
+    margin-bottom: 5%; }
+
+  .contact table {
+    width: 60%; }
+
+  .icon, .line-wrapper {
+    display: none; }
+
+  .skill {
+    width: 100%; }
+    .skill .dots-wrapper {
+      margin: 0; }
+      .skill .dots-wrapper .dots li {
+        margin-right: 8px; }
+
+  .col-soft-1, .col-soft-2 {
+    width: 100%;
+    padding: 0; }
+
+  .col-soft-1 {
+    margin-bottom: 5%; } }
 
 /*# sourceMappingURL=styles.css.map */
