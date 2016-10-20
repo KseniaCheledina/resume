@@ -1,0 +1,23 @@
+include mixins.pug
+include ../skills/skill.pug
+doctype
+html
+	head
+		meta(charset="utf-8")
+		meta(lang="en")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		title Second Project
+		link(rel="stylesheet", type="text/css", href="styles/style.css")
+	body
+		div(id="wrapper")
+		div(class="container")
+			div(class="column column-1")
+				include ../picture/picture.pug
+				include ../name/name.pug
+				include ../profile/profile.pug
+				include ../contact/contact.pug
+				include ../skills/skills.pug
+			div(class="column column-2")
+				include ../education/education.pug
+				include ../experience/experience.pug
+				include ../software/software.pug
