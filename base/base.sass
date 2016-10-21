@@ -3,6 +3,9 @@
 
 $blue: #3D6cb0
 $grey: #e6e6e6
+$large: 1110px
+$medium: 768px
+
 
 // General rules
 *
@@ -56,3 +59,15 @@ ul
 .column-2
 	width: 60%
 	padding-left: 3.03%
+
+//Media
++respond-to(medium-screens)
+	.column 
+		width: 100%
+	.circle-1
+		margin: 0 auto
++respond-to(small-screens)
+	.column 
+		width: 100%
+	.circle-1
+		margin: 0 auto

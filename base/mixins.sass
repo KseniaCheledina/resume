@@ -66,3 +66,13 @@
 	-moz-flex: $fg $fs $fb
 	-ms-flex: $fg $fs $fb
 	flex: $fg $fs $fb
+
+@mixin respond-to($media)
+	@if $media == medium-screens
+		@media only screen and (min-width: $medium + 1) and (max-width: $large - 1) 
+			@content
+
+	@else if $media == small-screens
+		@media only screen and (max-width: $medium) 
+			@content
+
