@@ -1,5 +1,5 @@
-mixin skill(skill_name, dots_blue)
-	div(class="skill") skill_name
+mixin skill(skill, dots_blue)
+	div(class="skill")= skill
 		div(class="dots-wrapper")
 			ul(class="dots")
 				- for (var i=0; i<12; i++)
