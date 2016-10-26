@@ -1,0 +1,15 @@
+mixin skill(skill, dots_blue)
+	div(class="skill")= skill
+		div(class="dots-wrapper")
+			ul(class="dots")
+				- for (var i=0; i<12; i++)
+					- if (i >= dots_blue )
+						li(class="grey")
+					- else
+						li
+					
+						
+
+				
+			
+					

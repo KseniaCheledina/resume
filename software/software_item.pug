@@ -1,0 +1,5 @@
+mixin software_item(title)
+	- var word = title.split("&")[0].split(" ")[0]
+	div(class="soft")= title
+		div(class="rect")
+			div(class="rect-2 rect-" + word)
